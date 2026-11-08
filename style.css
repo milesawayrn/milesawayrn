@@ -214,6 +214,40 @@ footer { padding: 40px 0; border-top: 1px solid var(--line); color: var(--muted)
 .menu a:hover { padding-left: 14px; color: var(--accent); }
 .menu a:hover .arrow { opacity: 1; transform: translateX(0); }
 
+/* Title screen: centred lowercase menu with room above for an animation */
+.title-page .title-screen { padding: 0; }
+.title-page .title-screen .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.animation-space {
+  width: 100%;
+  min-height: 38vh;      /* space reserved for the animation */
+}
+.title-page .menu {
+  margin-top: 0;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.title-page .menu a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: none;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  transition: color 0.2s;
+}
+.title-page .menu a:hover { padding-left: 0; color: var(--accent); }
+
 /* Inner pages */
 .page-head { padding: 72px 0 48px; }
 .page-head h1 { font-size: clamp(36px, 6vw, 56px); letter-spacing: -0.03em; line-height: 1.1; }
