@@ -240,13 +240,21 @@ footer { padding: 40px 0; border-top: 1px solid var(--line); color: var(--muted)
   display: block;
   padding: 8px 0;
   border-bottom: none;
-  font-size: clamp(28px, 5vw, 44px);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  text-transform: none;
+  font-size: clamp(40px, 8vw, 72px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000;
   transition: color 0.2s;
 }
 .title-page .menu a:hover { padding-left: 0; color: var(--accent); }
+.title-email {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #9a9a95;
+  text-decoration: none;
+}
+.title-email:hover { color: #6b6b66; }
 
 /* Inner pages */
 .page-head { padding: 72px 0 48px; }
